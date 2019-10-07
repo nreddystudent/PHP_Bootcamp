@@ -1,0 +1,51 @@
+
+body{
+	background-color: #505050 ;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column
+}
+.actions{
+	display: flex;
+	justify-content : space-between;
+	flex-direction: column;
+	background-color: grey;
+	border-radius: 30px;
+}
+.actions img{
+	width: 120px;
+	padding: 200px, 300px;
+}
+.menu img{
+	width: 120px;
+	padding: 20px, 20px;
+}
+.Sicon{
+	width:10px;
+	height: 10px;
+}
+.banner{
+	background-color: grey;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: gray;
+	border-radius: 30px;
+}
+.clusterImage{
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+}
+.clusterImage img{
+	width: 95%;
+	padding-top: 10px;
+	height: 95%;
+}
