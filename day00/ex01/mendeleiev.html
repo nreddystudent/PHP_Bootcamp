@@ -10,17 +10,62 @@
             margin: 0;
             padding: 0;
         }
-        .element{
+        td{
             text-align: center;
+            border: 1px solid black;
+            width: 5.6vw;
+            height: 5vw;
         }
-        .nonmetal{
-            background-color: lightgreen
+        table{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        h1{
+            font-style: bold;
+        }
+        .nm{
+            background-color: lightgreen;
+            position: relative;
+        }
+        .space{
+            border: 1px solid black
+        }
+        .order{
+            text-align: left;
+        }
+        .weight{
+            text-align: right;
+        }
+        .hidden{
+            /* width: 87.8%; */
+        }
+        .akm{
+            background-color: orange;
         }
     </style>
 </head>
 <body>
-    <table>
-    <tr>
-        <td class="element nonmetal" colspan="1"><h1>H</h1><p>Hydrogen</p></td>
+    <table contenteditable="true" cellspacing = "0" cellpadding = "1">
+        <tr>
+            <td class="nonmetal">
+                <p class="weight">1.008</p>
+                <h1>H</h1>
+                <p class="order">1</p>
+            </td>
+            <td colspan="16" class="hidden"></td>
+            <td  class="nm">
+                <p class="weight">4.003</p>
+                <h1>He</h1>
+                <p class="order">2</p>
+            </td>
+        </tr>
+        <td class="akm">
+            <p class="weight">6.941</p>
+            <h1>Li</h1>
+            <p class="order">3</p>
+        </td>
+
+    </table>
 </body>
 </html>
