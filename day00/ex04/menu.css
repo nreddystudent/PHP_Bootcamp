@@ -1,0 +1,28 @@
+body{
+	background-image: url(https://images.unsplash.com/photo-1529270296466-b09d5f5c2bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80)
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.2);
+	font-size: 2vw;
+	color: peachpuff;
+	padding-left: 1vw;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+	border-radius: 30px;
+}
+.nav{
+	background-color: black
+}
+.dropdown{
+	float: left;
+	margin-right: 20%;
+}
+.F{
+	margin-left: 15vw;
+}
+.S{
+	margin-left: 15vw;
+}
