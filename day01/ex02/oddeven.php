@@ -3,7 +3,7 @@
 	$f = fopen( 'php://stdin', 'r' );
 	echo "Enter a number: ";
 	$input = fgets($f);
-	
+	str_replace("\n", '', $input);
 	echo $input."\n";
 	echo $input;
 	if(is_numeric($input) == true){
