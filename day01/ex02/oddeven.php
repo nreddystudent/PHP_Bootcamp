@@ -1,6 +1,11 @@
 #!/usr/bin/php
 <?php
-	$input = readline("Enter a number: ");
+	$f = fopen( 'php://stdin', 'r' );
+	echo "Enter a number: ";
+	$input = fgets($f);
+	
+	echo $input."\n";
+	echo $input;
 	if(is_numeric($input) == true){
 		if ($input%2 == 0){
 			echo "The number ".$input." is even\n";
