@@ -9,12 +9,16 @@ body{
 	display: flex;
 	justify-content : space-between;
 	flex-direction: column;
-	background-color: grey;
+	background-color: #909090;
 	border-radius: 30px;
+	margin-left: 150px;
+	height : 20vw;
+	box-shadow: 20px 20px 20px black;
 }
 .actions img{
-	width: 120px;
-	padding: 200px, 300px;
+	/* width: 25%; */
+	height: 15%; 
+	padding:0;
 }
 .menu img{
 	width: 120px;
@@ -25,7 +29,12 @@ body{
 	height: 10px;
 }
 .banner{
-	background-color: grey;
+	background-color: #909090;
+	display: flex;
+	border-radius: 20px;
+	margin: 12px auto 12px; 
+	box-shadow: 20px 20px 20px black;
+	height: 9vw;
 }
 .container{
 	display: flex;
@@ -35,17 +44,53 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: gray;
+	background-color: #909090;
 	border-radius: 30px;
+	margin-right: 150px;
+	box-shadow: 20px 20px 20px black
 }
 .clusterImage{
-	background-color: grey;
+	background-color: #909090;
 	display: flex;
 	justify-content: center;
 	border-radius: 20px;
+	box-shadow: 20px 20px 20px black;
 }
 .clusterImage img{
 	width: 95%;
 	padding-top: 10px;
 	height: 95%;
+}
+.Sicons{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-right: 0.5vw;
+}
+.Sicon{
+	width:1vw;
+	height: 1vw;
+	justify-content: end;
+}
+#brick{
+	background-repeat: repeat;
+	background-image: url("./resources/brick.jpg");
+	width: 50px;
+}
+.resour{
+	padding-left: 30px;
+	width: 22.5vw;
+	height: 6.6vw;
+	padding-top:10px;
+	margin-right: 40vw;
+}
+.topImg{
+	display: flex;
+	flex:2;
+}
+.loupe{
+	width: 18vw;
+	position: relative;
+	top: 2vw;
+	
 }
