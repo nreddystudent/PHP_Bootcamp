@@ -7,22 +7,23 @@ body{
 }
 .actions{
 	display: flex;
-	justify-content : space-between;
-	flex-direction: column;
-	background-color: #909090;
-	border-radius: 30px;
-	margin-left: 150px;
-	height : 20vw;
-	box-shadow: 20px 20px 20px black;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #909090;
+    border-radius: 11px;
+    box-shadow: 14px 9px 9px black;
+    width: 8%;
+    height: 39%;
 }
 .actions img{
-	/* width: 25%; */
-	height: 15%; 
-	padding:0;
+	height: 34%;
+    margin: 12px auto 12px;
+    width: 41%;
 }
 .menu img{
-	width: 120px;
-	padding: 20px, 20px;
+	height: 34%;
+    margin: 12px auto 12px;
+    width: 41%;
 }
 .Sicon{
 	width:10px;
@@ -31,7 +32,7 @@ body{
 .banner{
 	background-color: #909090;
 	display: flex;
-	border-radius: 20px;
+	border-radius: 13px;
 	margin: 12px auto 12px; 
 	box-shadow: 20px 20px 20px black;
 	height: 9vw;
@@ -41,25 +42,26 @@ body{
 	justify-content: space-around;
 }
 .menu{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: #909090;
-	border-radius: 30px;
-	margin-right: 150px;
-	box-shadow: 20px 20px 20px black
+		display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #909090;
+    border-radius: 11px;
+    box-shadow: 14px 9px 9px black;
+    width: 8%;
+    height: 39%;
 }
 .clusterImage{
 	background-color: #909090;
 	display: flex;
 	justify-content: center;
 	border-radius: 20px;
-	box-shadow: 20px 20px 20px black;
+    box-shadow: 14px 9px 9px black;
 }
 .clusterImage img{
 	width: 95%;
-	padding-top: 10px;
 	height: 95%;
+	padding-top: 10px;
 }
 .Sicons{
 	display: flex;
@@ -89,8 +91,47 @@ body{
 	flex:2;
 }
 .loupe{
-	width: 18vw;
-	position: relative;
-	top: 2vw;
-	
+	width: 16vw;
+    position: relative;
+    height: 10vw;
+    top: 1vw;	
+}
+.brick{
+	display: flex;
+	background-repeat: repeat;
+	background: url("resources/brick.jpg");
+	height: 4.5vw;
+	margin-bottom: 2vw;
+	margin: 1vw 1vw 1vw 1vw ;	
+}
+.space{
+	height: 5vw;
+}
+.dbox{
+	position: absolute;
+    width: 30vw;
+    border-radius: 9px;
+    height: 10vw;
+    background-color: lightgreen;
+	z-index: 2;
+	top: 35vw;
+    left: 10vw;
+	box-shadow: 14px 9px 9px black;
+	padding-left: 1vw;
+}
+button{
+	border-radius: 0px;
+}
+.white{
+	width:8vw;
+}
+.big{
+	font-size: 2vw;
+}
+.shade{
+	text-shadow: 4px 6px 5px black;
+}
+.towel{
+	width: 5vw;
+	height: 1vw;
 }
