@@ -6,14 +6,14 @@
 	$input = str_replace("\n", '', $input);
 	if(is_numeric($input) == true){
 		if ($input%2 == 0){
-			echo "The number ".$input." is even\n";
+			echo "The number $input is even\n";
 		}
 		elseif ($input%2!=0) {
-			echo "The number ".$input." is odd\n";
+			echo "The number $input is odd\n";
 		}
 	}
 	 else{
-	 	echo "'".$input."'"." is not a number\n";
+	 	echo "'$input' is not a number\n";
 	}
 	fclose($f);
 ?>
