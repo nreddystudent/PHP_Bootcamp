@@ -5,8 +5,7 @@
 		sort($string);
 		return $string;
 }
-
-	if ($argc > 1){
+	if($argc > 1){
 		unset($argv[0]);
 		$argv = array_filter($argv);
 		foreach($argv as $v){
@@ -21,7 +20,7 @@
 				$fullstring[] = $v;			
 			}
 		}
-		sort($fullstring);
+		natcasesort($fullstring);
 		foreach($fullstring as $v){
 			echo trim($v)."\n";
 		}
