@@ -22,6 +22,17 @@
 		}
 		natcasesort($fullstring);
 		foreach($fullstring as $v){
+			if (ctype_alpha($v))
+			echo trim($v)."\n";
+		}
+		$numbers = $fullstring;
+		rsort($numbers);
+		foreach($numbers as $v){
+			if (ctype_digit($v))
+			echo trim($v)."\n";
+		}
+		foreach($fullstring as $v){
+			if (!ctype_digit($v) && !ctype_alpha($v))
 			echo trim($v)."\n";
 		}
 	}
