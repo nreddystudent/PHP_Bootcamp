@@ -1,13 +1,27 @@
 #!/usr/bin/php
 <?php
-	$first = true;
+	function ft_split($string){
+		$string = explode(" ", $string);
+		sort($string);
+		return $string;
+}
+
+	unset($argv[0]);
+	$argv = array_filter($argv);
 	foreach($argv as $v){
-		if ($first)
-			$first = false;
+		if(strpos($v, ' ' )!= false)
+		{
+			$strings = ft_split($v);
+			foreach($strings as $value){
+				$fullstring[] = $value;}
+		}
 		else
-			$fullstring .= $v."\n";
+		{
+			$fullstring[] = $v;			
+		}
 	}
-	var_dump($fullstring);
-	foreach($fullstring as $v)
-		echo trim($v)."\n";
+	sort($fullstring);
+	foreach($fullstring as $v){
+		 echo trim($v)."\n";
+	}
 ?>
