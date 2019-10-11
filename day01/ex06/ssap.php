@@ -1,29 +1,17 @@
 #!/usr/bin/php
 <?php
-	function ft_split($string){
-		$string = explode(" ", $string);
-		sort($string);
-		return $string;
-}
 
-	if ($argc > 1){
-		unset($argv[0]);
-		$argv = array_filter($argv);
-		foreach($argv as $v){
-			if(strpos($v, ' ' )!= false)
-			{
-				$strings = ft_split($v);
-				foreach($strings as $value){
-					$fullstring[] = $value;}
-			}
-			else
-			{
-				$fullstring[] = $v;			
-			}
-		}
-		sort($fullstring);
-		foreach($fullstring as $v){
-			echo trim($v)."\n";
+if ($argc > 1){
+	$i = 1;
+	while ($i < $argc){
+		$string = explode(" ", $argv[$i++]);
+		$string = array_filter($string);
+		foreach($string as $v){
+			$array[] = $v;
 		}
 	}
+	sort($array);
+	foreach($array as $v)
+		 echo "$v\n";
+}
 ?>
