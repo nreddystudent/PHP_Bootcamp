@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 	if ($argc == 1)
-		echo "Incorrect Parameters";
+		echo "Incorrect Parameters\n";
 	else{
 		$num1 = trim($argv[1]);
 		$op = trim($argv[2]);
