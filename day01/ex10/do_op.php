@@ -14,11 +14,14 @@
 		elseif($op == "-"){
 			echo ($num1 - $num2. "\n");
 		}
-		elseif($op == "/"){
+		elseif($op == "/" && $num2 != 0){
 			echo ($num1 / $num2. "\n");
 		}
-		elseif($op == "%"){
+		elseif($op == "%" && $num2 != 0){
 			echo ($num1 % $num2. "\n");
+		}
+		else{
+			echo "Error\n";
 		}
 	}
 ?>
