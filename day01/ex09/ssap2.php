@@ -5,6 +5,22 @@
 		sort($string);
 		return $string;
 }
+function ft_sort($a, $b)
+{
+	$line = "abcdefghijklmnopqrstuvwxyz1234567890!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+	while(($i < strlen($a) || ($i < strlen($b)))){
+		$aindex = stripos($line, $a[$i]);
+		$bindex = stripos($line, $b[$i]);
+		if ($aindex > $bindex){
+			return (1);
+		}
+		elseif($aindex < $bindex){
+			return (-1);
+		}
+		$i++;
+	}
+
+}
 	if($argc > 1){
 		unset($argv[0]);
 		$argv = array_filter($argv);
@@ -20,21 +36,10 @@
 				$fullstring[] = $v;			
 			}
 		}
-		natcasesort($fullstring);
-		foreach($fullstring as $v){
-			if (ctype_alpha($v))
-			echo trim($v)."\n";
-		}
-		$numbers = $fullstring;
-		rsort($numbers);
-		foreach($numbers as $v){
-			if (ctype_digit($v))
-			echo trim($v)."\n";
-		}
-		foreach($fullstring as $v){
-			if (!ctype_digit($v) && !ctype_alpha($v))
-			echo trim($v)."\n";
-		}
+		usort($fullstring, ft_sort);
+		foreach($fullstring as $v)
+			echo "$v\n";
+
 	}
 
 ?>
