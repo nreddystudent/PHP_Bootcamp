@@ -8,8 +8,11 @@
 	{
 		$lines .= fgets($input);
 	}
-	$lines = preg_replace_callback('/(?<=\").*(?=\")/', function($lines){
-		return strtoupper($lines[0]);
+	$lines = preg_replace_callback("/<a.*title=\"\K(.*)(?=\")/", function($lines){
+			return(strtoupper($lines[0]));
 		}, $lines);
+	$lines = preg_replace_callback("/<a.*?>\K(.*?)(?=<)/", function($lines){
+		return(strtoupper($lines[0]));
+	}, $lines);
 	echo $lines;
 ?>
